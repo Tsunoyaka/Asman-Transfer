@@ -6,7 +6,7 @@ class Recall(models.Model):
     name = models.CharField(verbose_name='Имя', max_length=55)
     description = models.CharField(verbose_name='Отзыв', max_length=2048, blank=True, null=True)
     rating = models.PositiveSmallIntegerField(verbose_name='Оценка')
-    photo = models.ImageField(verbose_name='Фото', upload_to='recall_img', default='/asman_tranfer.png')
+    photo = models.ImageField(verbose_name='Фото', upload_to='recall_img', default='/asman_transfer.png')
     created_at = models.DateField(verbose_name='Дата создания', auto_now=True)
 
     class Meta:

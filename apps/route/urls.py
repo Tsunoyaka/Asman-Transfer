@@ -1,7 +1,6 @@
 from django.urls import path
 
-from .views import RouteAPIVIew, Send
-from . import views
+from .views import RouteAPIVIew
 
 
 urlpatterns = [
