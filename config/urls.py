@@ -39,11 +39,11 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('api/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
-    path('admin/', admin.site.urls),
-    path('auto/', include('apps.auto.urls')),
-    path('review/', include('apps.review.urls')),
-    path('route/', include('apps.route.urls')),
-    path('transfer/', include('apps.transfer.urls')),
+    path('api/admin/', admin.site.urls),
+    path('api/auto/', include('apps.auto.urls')),
+    path('api/review/', include('apps.review.urls')),
+    path('api/route/', include('apps.route.urls')),
+    path('api/transfer/', include('apps.transfer.urls')),
 ]
 
 if settings.DEBUG:
